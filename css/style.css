@@ -1,0 +1,89 @@
+html {
+  font-size: 62.5%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 1.6rem; }
+
+.header {
+  background-image: url(../media/action-bike-biker-416978.jpg);
+  height: 50rem;
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .header .header__call {
+    color: #fff;
+    width: 100%;
+    text-align: right;
+    background-color: #ffffff11;
+    display: inline-block; }
+
+nav {
+  background-color: #1f09099c;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  nav::after {
+    content: '';
+    clear: both;
+    display: table; }
+
+.nav--left {
+  float: left; }
+  .nav--left .nav--img img {
+    width: 4.5rem;
+    height: 4.5rem; }
+
+.nav--img:link,
+.nav--brand:link,
+.nav--brand:visited,
+.nav-bikes {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff !important; }
+
+.nav--right {
+  list-style: none;
+  float: right; }
+  .nav--right li {
+    display: inline;
+    margin-right: 30px; }
+    .nav--right li:last-child {
+      margin: 0; }
+  .nav--right a:link,
+  .nav--right a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff; }
+
+.banner {
+  background-image: url(../media/accessories_banner-86595775b70cf5c22dd6e6c398b1929e0fb6a3c4eea7556697ba03695a8a80ab.jpg);
+  height: 21rem;
+  background-size: 100% 100%; }
+
+.stats {
+  background-color: #f3eaea;
+  height: 20rem;
+  width: 100%; }
+
+.speciality {
+  background-color: #fff;
+  height: 40rem;
+  width: 100%; }
+
+.ourfleet {
+  background-color: #f3eaea;
+  height: 60rem;
+  width: 100%; }
+
+.footer {
+  background-color: brown;
+  height: 30rem; }
