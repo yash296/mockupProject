@@ -14,7 +14,7 @@ body {
   font-size: 1.6rem; }
 
 .header {
-  background-image: url(../media/action-bike-biker-416978.jpg);
+  background-image: linear-gradient(to right bottom, rgba(94, 64, 64, 0.432), rgba(73, 64, 64, 0.295)), url(../media/action-bike-biker-416978.jpg);
   height: 50rem;
   background-size: cover;
   background-position: top;
@@ -28,7 +28,8 @@ body {
 
 nav {
   background-color: #1f09099c;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  position: relative; }
   nav::after {
     content: '';
     clear: both;
@@ -37,16 +38,23 @@ nav {
 .nav--left {
   float: left; }
   .nav--left .nav--img img {
-    width: 4.5rem;
-    height: 4.5rem; }
+    width: 4.2rem;
+    height: 4.2rem;
+    padding-left: 2.5rem;
+    padding-right: 0; }
 
-.nav--img:link,
 .nav--brand:link,
-.nav--brand:visited,
-.nav-bikes {
-  padding: 10px;
+.nav--brand:visited {
+  padding: 1rem 1rem 1rem 0.4rem;
+  font-size: 2.1rem;
   display: inline-block;
-  text-align: center;
+  text-decoration: none;
+  color: #fff !important; }
+
+.nav-bikes {
+  padding: 1rem;
+  font-size: 1.8rem;
+  display: inline-block;
   text-decoration: none;
   color: #fff !important; }
 
@@ -68,11 +76,23 @@ nav {
   background-image: url(../media/accessories_banner-86595775b70cf5c22dd6e6c398b1929e0fb6a3c4eea7556697ba03695a8a80ab.jpg);
   height: 21rem;
   background-size: 100% 100%; }
+  .banner .banner__textbox {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    transform: translate(-50%, -50%); }
 
 .stats {
   background-color: #f3eaea;
-  height: 20rem;
-  width: 100%; }
+  width: 100%;
+  padding: 5rem 10rem; }
+  .stats .stats--class {
+    display: inline-block;
+    width: 15rem;
+    height: 10rem;
+    margin: 2rem 3rem;
+    padding: 2rem 6rem;
+    background-color: yellow; }
 
 .speciality {
   background-color: #fff;
@@ -87,3 +107,47 @@ nav {
 .footer {
   background-color: brown;
   height: 30rem; }
+
+.form {
+  margin: 17% 10% 10% 10%;
+  background-color: #1f09099c;
+  background-size: cover;
+  padding-bottom: 2rem; }
+  .form form {
+    padding-left: 2rem; }
+    .form form input {
+      border-top: transparent;
+      border-right: transparent;
+      border-left: transparent;
+      background-color: transparent;
+      margin-right: 2rem;
+      padding-right: 3.5rem;
+      padding-top: 0.8rem;
+      font-size: 1.5rem;
+      padding-bottom: 0.8rem;
+      border-bottom: #fff 0.5px solid; }
+      .form form input::placeholder {
+        color: #fff; }
+  .form a,
+  .form a:link,
+  .form a:active {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2rem 0 2rem 3rem; }
+  .form .form--intercity,
+  .form .form--intercity:active,
+  .form .form--intercity:link {
+    color: #d1a1a1; }
+  .form .form--search,
+  .form .form--search:active,
+  .form .form--search:link {
+    border-bottom: 10px solid yellow; }
+  .form button {
+    border: none;
+    border-radius: 10%;
+    font-size: 2rem;
+    background-color: antiquewhite;
+    padding: 1rem 3rem;
+    margin: 10px auto; }
