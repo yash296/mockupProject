@@ -97,9 +97,10 @@ nav {
   background-image: url(../media/accessories_banner-86595775b70cf5c22dd6e6c398b1929e0fb6a3c4eea7556697ba03695a8a80ab.jpg);
   height: 21rem;
   background-size: 100% 100%;
+  position: relative;
   .banner__textbox {
     position: absolute;
-    top: 80%;
+    top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
   }
@@ -121,18 +122,39 @@ nav {
 
 .speciality {
   background-color: #fff;
-  height: 40rem;
   width: 100%;
+  .speciality--maincont {
+    display: inline-block;
+    width: 25rem;
+    height: 15rem;
+    margin: 2rem 3rem;
+    background-color: yellow;
+  }
+  .speciality--subcont {
+    div {
+      display: inline-block;
+    }
+  }
 }
 .ourfleet {
   background-color: rgb(243, 234, 234);
-  height: 60rem;
+  height: 60%;
   width: 100%;
+  .ourfleet--maincont {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    width: 80%;
+    margin: 2rem 10%;
+  }
+  .ourfleet--subcont {
+    display: inline-block;
+    margin: 0 2%;
+  }
 }
 
 .footer {
   background-color: brown;
-  height: 30rem;
 }
 
 .form {
@@ -152,7 +174,7 @@ nav {
       padding-top: 0.8rem;
       font-size: 1.5rem;
       padding-bottom: 0.8rem;
-      border-bottom: #fff 0.5px solid;
+      border-bottom: 0.5px #fff solid;
       &::placeholder {
         color: #fff;
       }
