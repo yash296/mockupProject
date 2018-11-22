@@ -217,10 +217,78 @@ nav {
     padding: 0 2%;
     border-bottom: 5px solid #ccb6b6;
   }
+  .ourfleet--subcont1 {
+    a {
+      color: #ccb6b6;
+      font-weight: 700;
+    }
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    text-align: center;
+    padding: 7rem 15rem 7rem 4rem;
+    border-bottom: 5px solid #ccb6b6;
+  }
+  .ourfleet--mentions {
+    padding-left: 16%;
+    .ourfleet--mentionsubs {
+      display: inline-block;
+      .ourfleetmentionimg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .footer {
-  background-color: brown;
+  background-color: #363636;
+  padding-left: 11%;
+  .footimg {
+    padding-right: 2%;
+  }
+  .footerheading {
+    .footerroyal {
+      color: #fdd835;
+    }
+    color: white;
+    h1 {
+      font-size: 6rem;
+      font-weight: 800;
+    }
+  }
+  .footerblock {
+    display: inline-table;
+    padding-top: 2%;
+  }
+  .footersub {
+    display: inline-table;
+    padding-left: 8%;
+    padding-bottom: 3%;
+    color: white;
+    font-size: 3rem;
+    line-height: 2rem;
+    h2 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    ul {
+      li {
+        list-style: none;
+        a {
+          color: white;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .copyright {
+    color: white;
+    display: block;
+    padding-left: 20%;
+    padding-right: 10%;
+  }
 }
 
 .form {

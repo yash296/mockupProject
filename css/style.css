@@ -186,9 +186,60 @@ nav {
     display: inline-block;
     padding: 0 2%;
     border-bottom: 5px solid #ccb6b6; }
+  .ourfleet .ourfleet--subcont1 {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    text-align: center;
+    padding: 7rem 15rem 7rem 4rem;
+    border-bottom: 5px solid #ccb6b6; }
+    .ourfleet .ourfleet--subcont1 a {
+      color: #ccb6b6;
+      font-weight: 700; }
+  .ourfleet .ourfleet--mentions {
+    padding-left: 16%; }
+    .ourfleet .ourfleet--mentions .ourfleet--mentionsubs {
+      display: inline-block; }
+      .ourfleet .ourfleet--mentions .ourfleet--mentionsubs .ourfleetmentionimg {
+        height: 100%;
+        width: 100%; }
 
 .footer {
-  background-color: brown; }
+  background-color: #363636;
+  padding-left: 11%; }
+  .footer .footimg {
+    padding-right: 2%; }
+  .footer .footerheading {
+    color: white; }
+    .footer .footerheading .footerroyal {
+      color: #fdd835; }
+    .footer .footerheading h1 {
+      font-size: 6rem;
+      font-weight: 800; }
+  .footer .footerblock {
+    display: inline-table;
+    padding-top: 2%; }
+  .footer .footersub {
+    display: inline-table;
+    padding-left: 8%;
+    padding-bottom: 3%;
+    color: white;
+    font-size: 3rem;
+    line-height: 2rem; }
+    .footer .footersub h2 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .footer .footersub ul li {
+      list-style: none; }
+      .footer .footersub ul li a {
+        color: white;
+        font-size: 1.3rem; }
+  .footer .copyright {
+    color: white;
+    display: block;
+    padding-left: 20%;
+    padding-right: 10%; }
 
 .form {
   margin: 17% 10% 10% 10%;

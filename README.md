@@ -1,6 +1,6 @@
-#Task: Royal Brothers
+# Task: Royal Brothers
 
-Design a responsive web page. (Please find attached for the design)
+Design a responsive web page. (Please find attached task/home(2).png for the design)
 
 Terms
 Before submitting task make sure website is responsive.
@@ -9,7 +9,7 @@ Task source can be shared through git link or google drive link or email.
 
 This Task Should be submitted on or before 22nd November (Thursday).
 
-##How to
+## How to
 
 Download or clone the the project, run the index.html file and you're done!
 
