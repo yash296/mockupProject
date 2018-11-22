@@ -3,38 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800"
+      rel="stylesheet"
+    />
     <title>Royal Brothers</title>
   </head>
   <body>
     <!-- header -->
     <div class="header">
       <div class="header__call">
-        <span>Refer Friends </span><span>+91-9019595595</span
-        ><span>+91-9019595595</span>
+        <span>Refer friends <i class="fas fa-phone"></i> </span
+        ><span>+91-9019595595 /</span><span> +91-7306747474</span>
       </div>
       <!-- navigation bar -->
-      <nav>
-        <div class="nav--left">
-          <a class="nav--img" href="#"
-            ><img src="media/royalbrothers.png" alt="royalbrothers logo"
-          /></a>
-          <a href="#" class="nav--brand"
+      <nav class="navbar navbar-expand-lg" id="navColor">
+        <a class="navbar-brand bimg" href="#"
+          ><img
+            src="media/royalbrothers.png"
+            alt=""
+            width="42px"
+            height="42px"
+          /></a
+        >
+        <div class="mr-auto bname"
             >Royal <br />
-            Brothers</a
+            Brothers</div class="mr-auto"
           >
-          <a href="#" class="nav-bikes">Bikes in Bangalore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link bikes"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Bikes in <span>Bangalore </span> <i class="fas fa-angle-down"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-0">
+            <li class="nav-item ">
+              <button href="" class="nav-link nav--right">Tariff</button>
+            </li>
+            <li class="nav-item">
+                <button href="" class="nav-link nav--right">Package</button>
+            </li>
+            <li class="nav-item">
+                  <button href="" class="nav-link nav--right">Search <i class="fas fa-search"></i></button>
+            </li>
+            <li class="nav-item">
+                    <button href="" class="nav-link nav--right">Menu  <i class="fas fa-angle-down"></i></button>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-0 nav--sign">
+            <li class="nav-item">
+              <button class="nav--signComp">Sign up</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav--signComp">Log in</button>
+              </li>
+          </ul>
         </div>
-        <ul class="nav--right">
-          <li><a href="#">Tariff</a></li>
-          <li><a href="#">Package</a></li>
-          <li><a href="#">Search</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Sign up</a></li>
-          <li><a href="#">Log in</a></li>
-        </ul>
       </nav>
+    </div>
       <div class="form">
         <a href="#" class form--search>Search</a>
         <a class="form--intercity" href="#">Inter City</a>
@@ -49,100 +111,100 @@
     <!-- Banner -->
     <div class="banner">
       <div class="banner__textbox">
-        <a>Riding gears and accessories</a> <br />
-        <a>available on rent</a><br />
-        <button>Know More</button>
+        <a class="banner__riding">Riding gears and accessories</a> <br />
+        <a class="banner__rent">Available on rent.</a><br />
+        <button class="banner__btn">Know More</button>
       </div>
     </div>
     <!-- Stats -->
     <div class="stats">
-      <div class="stats__city stats--class"><a>40+</a><br /><a>cities</a></div>
+      <div class="stats__city stats--class"><a class="stats--classheading">40+</a><br /><a class="stats--subheading">cities</a></div>
       <div class="stats__km stats--class">
-        <a>5 m</a><br /><a>kilometers</a>
+        <a class="stats--classheading">5 m</a><br /><a class="stats--subheading">kilometers</a>
       </div>
       <div class="stats__facebook stats--class">
-        <a>4.6</a><br /><a>on facebook</a>
+        <a class="stats--classheading">4.6 <i class="fas fa-star"></i></a><br /><a class="stats--subheading">on facebook</a>
       </div>
       <div class="stats__google stats--class">
-        <a>4.5</a><br /><a>on google</a>
+        <a class="stats--classheading">4.5 <i class="fas fa-star"></i></a><br /><a  class="stats--subheading">on google</a>
       </div>
     </div>
     <!-- Our Speciality -->
     <div class="speciality">
-      <h1>our speciality</h1>
+      <h1 class="speciality--main">our speciality</h1>
       <br />
       <!-- 1 -->
       <div class="speciality--maincont">
         <div class="speciality--subcont">
-          <div>1</div>
-          <div>dadadnasjkd</div>
+          <div class="speciality--subcontdvi1">1</div>
+          <div class="speciality--subcontdvi2">First RTO Authorized bike rental</div>
         </div>
-        <div>ashdhhasd</div>
+        <div>Pioneers in renting out bikes legally in Karnataka.</div>
       </div>
       <!-- 2 -->
       <div class="speciality--maincont">
         <div class="speciality--subcont">
-          <div>1</div>
-          <div>dadadnasjkd</div>
+          <div class="speciality--subcontdvi1">2</div>
+          <div class="speciality--subcontdvi2">Bikes in top notch conditions</div>
         </div>
-        <div>ashdhhasd</div>
+        <div>Each bike is cleaned and serviced weekly and also once before renting out.</div>
       </div>
       <!-- 3 -->
       <div class="speciality--maincont">
         <div class="speciality--subcont">
-          <div>1</div>
-          <div>dadadnasjkd</div>
+          <div class="speciality--subcontdvi1">3</div>
+          <div class="speciality--subcontdvi2">Timely pick up and drop off</div>
         </div>
-        <div>ashdhhasd</div>
+        <div>If we delay even by 15 mins, ₹ 25 on scooter and ₹50 on bikes will be refunded.</div>
       </div>
       <!-- 4 -->
       <div class="speciality--maincont">
         <div class="speciality--subcont">
-          <div>1</div>
-          <div>dadadnasjkd</div>
+          <div class="speciality--subcontdvi1">4</div>
+          <div class="speciality--subcontdvi2">Home delivery on weekdays*</div>
         </div>
-        <div>ashdhhasd</div>
+        <div>Now avail our service and get the key to happiness at your doorstep.</div>
       </div>
       <!-- 5 -->
       <div class="speciality--maincont">
         <div class="speciality--subcont">
-          <div>1</div>
-          <div>dadadnasjkd</div>
+          <div class="speciality--subcontdvi1">5</div>
+          <div class="speciality--subcontdvi2">Commercial Insurance is covered</div>
         </div>
-        <div>ashdhhasd</div>
+        <div>We have a valid commercial insurance for the rider, pillion and third party</div>
       </div>
       <!-- 6 -->
       <div class="speciality--maincont">
         <div class="speciality--subcont">
-          <div>1</div>
-          <div>dadadnasjkd</div>
+          <div class="speciality--subcontdvi1">6</div>
+          <div class="speciality--subcontdvi2">Most trusted & transparent process</div>
         </div>
-        <div>ashdhhasd</div>
+        <div>We are upfront about the entire process of renting a bike from us</div>
       </div>
       <!-- 7 -->
       <div class="speciality--maincont">
         <div class="speciality--subcont">
-          <div>1</div>
-          <div>dadadnasjkd</div>
+          <div class="speciality--subcontdvi1">7</div>
+          <div class="speciality--subcontdvi2">19 pickup locations in Bangalore</div>
         </div>
-        <div>ashdhhasd</div>
+        <div>There are good chances you will find us in 3 km radius from your location</div>
       </div>
       <!-- 8 -->
       <div class="speciality--maincont">
         <div class="speciality--subcont">
-          <div>1</div>
-          <div>dadadnasjkd</div>
+          <div class="speciality--subcontdvi1">8</div>
+          <div class="speciality--subcontdvi2">Choose from a wide variety of bikes</div>
         </div>
-        <div>ashdhhasd</div>
+        <div>Pick a bike that suits your need from scooters to superbikes.</div>
       </div>
     </div>
     <!-- Our Fleet -->
     <div class="ourfleet">
-      <h1>Our fleet</h1>
+      <h1 class="ourfleet-main">Our fleet</h1>
       <div class="ourfleet--maincont">
         <!-- Triumph -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Triumph Street Twin</a></div>
+          <div><a>Triumph Street Twin</a></div>
           <div>
             <img
               src="media/bikes/triumph-street-twin.png"
@@ -152,7 +214,7 @@
         </div>
         <!-- Benelli TNT 600 i -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Benelli TNT 600 i</a></div>
+          <div><a>Benelli TNT 600 i</a></div>
           <div>
             <img
               src="media/bikes/benelli-tnt-600.png"
@@ -162,7 +224,7 @@
         </div>
         <!-- Harley Davidson Iron 883 -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Harley Davidson Iron 883</a></div>
+          <div><a>Harley Davidson Iron 883</a></div>
           <div>
             <img
               src="media/bikes/iron_883_home.png"
@@ -172,7 +234,7 @@
         </div>
         <!-- Classic 350 -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Classic 350</a></div>
+          <div><a>Classic 350</a></div>
           <div>
             <img
               src="media/bikes/royal-enfield-redditch.png"
@@ -182,7 +244,7 @@
         </div>
         <!-- Himalayan -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Himalayan</a></div>
+          <div><a>Himalayan</a></div>
           <div>
             <img
               src="media/bikes/royal-enfield-himalayan.png"
@@ -192,12 +254,12 @@
         </div>
         <!-- Dominar 400 -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Dominar 400</a></div>
+          <div><a>Dominar 400</a></div>
           <div><img src="media/bikes/dominar.png" alt="Dominar 400" /></div>
         </div>
         <!-- Avenger Cruise 220 -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Avenger Cruise 220</a></div>
+          <div><a>Avenger Cruise 220</a></div>
           <div>
             <img
               src="media/bikes/Avenger-Cruise.png"
@@ -207,22 +269,22 @@
         </div>
         <!-- Activa -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Activa</a></div>
+          <div><a>Activa</a></div>
           <div><img src="media/bikes/Activa.png" alt="Activa" /></div>
         </div>
         <!-- Classic 350 -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Classic 350</a></div>
+          <div><a>Classic 350</a></div>
           <div><img src="media/bikes/Classic-350.png" alt="Classic 350" /></div>
         </div>
         <!-- Yamaha FZ -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Yamaha FZ</a></div>
+          <div><a>Yamaha FZ</a></div>
           <div><img src="media/bikes/yamaha-fz.png" alt="Yamaha FZ" /></div>
         </div>
         <!-- Duke 200 -->
         <div class="ourfleet--subcont">
-          <div><a href="#">Duke 200</a></div>
+          <div><a>Duke 200</a></div>
           <div><img src="media/bikes/Duke-200.png" alt="Duke 200" /></div>
         </div>
       </div>

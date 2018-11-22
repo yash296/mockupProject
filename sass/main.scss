@@ -20,6 +20,7 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
 }
 .header {
   background-image: linear-gradient(
@@ -27,68 +28,75 @@ body {
       rgba(94, 64, 64, 0.432),
       rgba(73, 64, 64, 0.295)
     ),
-    url(../media/action-bike-biker-416978.jpg);
+    url(../media/action-blur-buildings-302718.jpg);
   height: 50rem;
   background-size: cover;
   background-position: top;
   position: relative;
   .header__call {
     color: #fff;
+    font-size: 1.3rem;
     width: 100%;
-    text-align: right;
-    background-color: #ffffff11;
     display: inline-block;
+    text-align: right;
+    background-color: #ffffff07;
+    display: inline-block;
+    padding: 1px 0;
   }
 }
 nav {
   background-color: #1f09099c;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  @include clearfix;
   position: relative;
 }
-
-.nav--left {
-  float: left;
-  .nav--img {
-    img {
-      width: 4.2rem;
-      height: 4.2rem;
-      padding-left: 2.5rem;
-      padding-right: 0;
-    }
-  }
-}
-
-.nav--brand:link,
-.nav--brand:visited {
-  padding: 1rem 1rem 1rem 0.4rem;
-  font-size: 2.1rem;
-  display: inline-block;
-  text-decoration: none;
+.bname {
   color: #fff !important;
+  padding-right: 2%;
+  font-size: 2rem;
+  line-height: 2rem;
 }
-.nav-bikes {
-  padding: 1rem;
-  font-size: 1.8rem;
-  display: inline-block;
-  text-decoration: none;
-  color: #fff !important;
+.bimg {
+  padding-left: 1.1%;
 }
-
 .nav--right {
-  list-style: none;
-  float: right;
-  li {
-    display: inline;
-    margin-right: 30px;
-    &:last-child {
-      margin: 0;
+  color: #fff;
+  background-color: transparent;
+  padding: 20px 0;
+  margin-left: 3rem;
+  border: 0;
+  font-size: 1.3rem;
+  &:hover {
+    background-color: #1f0909c7;
+    cursor: pointer;
+  }
+}
+.nav--sign {
+  padding-left: 22px;
+  .nav--signComp {
+    color: #fff;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 7px 12px;
+    border: 1px solid white;
+    &:hover {
+      background-color: #1f0909c7;
+      cursor: pointer;
     }
   }
-  a:link,
-  a:visited {
-    text-decoration: none;
-    text-transform: uppercase;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+.bikes,
+.bikes:link,
+.bikes:active {
+  color: #fff;
+  font-size: 1.2rem;
+  .a {
+    color: #fff;
+  }
+  &:hover {
     color: #fff;
   }
 }
@@ -103,43 +111,102 @@ nav {
     top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
+    .banner__btn {
+      background-color: #fdd835;
+      border: 0;
+      border-radius: 5%;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      padding: 0.8rem 1.5rem;
+      margin-top: 3%;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
   }
+}
+.banner__riding {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.banner__rent {
+  color: #8d8d8de5 !important;
+  font-size: 1.4rem;
 }
 
 .stats {
-  background-color: rgb(243, 234, 234);
+  background-color: #f3f3f3;
   width: 100%;
-  padding: 5rem 10rem;
+  padding: 5rem 8rem;
   .stats--class {
+    border-radius: 3%;
     display: inline-block;
-    width: 15rem;
-    height: 10rem;
+    width: 16rem;
+    height: 7rem;
     margin: 2rem 3rem;
-    padding: 2rem 6rem;
-    background-color: yellow;
+    padding: 2rem 8rem 2rem 4rem;
+    background-color: #e2d8d8;
+    .stats--subheading {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .stats--classheading {
+      font-weight: 700;
+      font-size: 3rem;
+      text-transform: uppercase;
+      .fas,
+      .fa-star {
+        font-size: 1.4rem;
+      }
+    }
   }
 }
 
 .speciality {
+  margin: 2% 8%;
+  .speciality--main {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
   background-color: #fff;
   width: 100%;
   .speciality--maincont {
     display: inline-block;
-    width: 25rem;
+    width: 28rem;
     height: 15rem;
-    margin: 2rem 3rem;
-    background-color: yellow;
+    margin: 2rem 1.5rem;
+    position: relative;
+    color: #ebd3d3;
+    font-size: 1.2rem;
   }
   .speciality--subcont {
+    color: black;
     div {
       display: inline-block;
+    }
+    .speciality--subcontdvi1 {
+      color: #fdd835;
+      font-size: 3.8rem;
+      font-weight: 800;
+    }
+    .speciality--subcontdvi2 {
+      font-size: 1.4 rem;
+      font-weight: 700;
     }
   }
 }
 .ourfleet {
-  background-color: rgb(243, 234, 234);
+  background-color: #f3f3f3;
   height: 60%;
   width: 100%;
+  .ourfleet-main {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
   .ourfleet--maincont {
     display: block;
     position: relative;
@@ -159,6 +226,10 @@ nav {
 
 .form {
   margin: 17% 10% 10% 10%;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+
   background-color: #1f09099c;
   background-size: cover;
   padding-bottom: 2rem;
@@ -201,10 +272,11 @@ nav {
   }
   button {
     border: none;
-    border-radius: 10%;
-    font-size: 2rem;
-    background-color: antiquewhite;
-    padding: 1rem 3rem;
-    margin: 10px auto;
+    border-radius: 5%;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: #fdd835;
+    padding: 0.5rem 2.2rem;
+    margin: 10px 40px 10px 10px;
   }
 }
