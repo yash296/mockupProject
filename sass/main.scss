@@ -70,11 +70,12 @@ nav {
 }
 .nav--sign {
   padding-left: 22px;
+  padding-right: 12px;
   .nav--signComp {
     color: #fff;
     background-color: transparent;
     font-size: 1.2rem;
-    padding: 7px 12px;
+    padding: 6px 14px;
     border: 1px solid white;
     &:hover {
       background-color: #1f0909c7;
@@ -315,7 +316,7 @@ nav {
       padding-top: 0.8rem;
       font-size: 1.5rem;
       padding-bottom: 0.8rem;
-      border-bottom: 0.5px #fff solid;
+      border-bottom: 0.5px rgb(209, 161, 161) solid;
       &::placeholder {
         color: #fff;
       }
@@ -350,6 +351,10 @@ nav {
     padding: 0.5rem 2.2rem;
     margin: 10px 40px 10px 10px;
   }
+}
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
 }
 
 .w3-sidebar,
