@@ -193,7 +193,7 @@ nav {
     text-align: center;
     background-color: white;
     text-align: center;
-    padding: 7rem 15rem 7rem 4rem;
+    padding: 7rem 15rem 7.1rem 4rem;
     border-bottom: 5px solid #ccb6b6; }
     .ourfleet .ourfleet--subcont1 a {
       color: #ccb6b6;
@@ -278,10 +278,11 @@ nav {
   .form .form--intercity:active,
   .form .form--intercity:link {
     color: #d1a1a1; }
-  .form .form--search,
-  .form .form--search:active,
-  .form .form--search:link {
-    border-bottom: 10px solid yellow; }
+  .form .form--search {
+    border-bottom: 2px solid #fdd835;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff; }
   .form button {
     border: none;
     border-radius: 5%;
@@ -300,3 +301,7 @@ nav {
   .w3-bar-block a,
   .w3-border-right a {
     color: white; }
+
+@media (min-width: 120px) and (max-width: 767px) {
+  #bikes1 {
+    display: inline-block; } }
