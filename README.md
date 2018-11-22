@@ -16,9 +16,9 @@ Download or clone the the project, run the index.html file and you're done!
 ## Available Scripts
 
 (Use npm install) <br>
-In the project directory, you can run:<br>
+In the project directory, <br>
 
-Incase you want to edit and compile the scss as dev use
+Incase you want to edit and compile the scss as dev, run
 
 ### `npm run compile:sass`
 

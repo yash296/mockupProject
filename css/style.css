@@ -4,7 +4,7 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: unset; }
 
 * {
   margin: 0;
@@ -18,7 +18,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(94, 64, 64, 0.432), rgba(73, 64, 64, 0.295)), url(../media/action-blur-buildings-302718.jpg);
   height: 50rem;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative; }
   .header .header__call {
     color: #fff;
@@ -87,7 +87,9 @@ nav {
 .banner {
   background-image: url(../media/accessories_banner-86595775b70cf5c22dd6e6c398b1929e0fb6a3c4eea7556697ba03695a8a80ab.jpg);
   height: 21rem;
-  background-size: 100% 100%;
+  background-size: 100 auto;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative; }
   .banner .banner__textbox {
     position: absolute;
@@ -288,3 +290,13 @@ nav {
     background-color: #fdd835;
     padding: 0.5rem 2.2rem;
     margin: 10px 40px 10px 10px; }
+
+.w3-sidebar,
+.w3-bar-block,
+.w3-border-right {
+  background-color: #1f09099c;
+  right: 0; }
+  .w3-sidebar a,
+  .w3-bar-block a,
+  .w3-border-right a {
+    color: white; }

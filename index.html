@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -30,6 +31,17 @@
         <span>Refer friends <i class="fas fa-phone"></i> </span
         ><span>+91-9019595595 /</span><span> +91-7306747474</span>
       </div>
+      <!-- sidebar -->
+      <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+          <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+          <a href="#" class="w3-bar-item w3-button">Home</a>
+          <a href="#" class="w3-bar-item w3-button">Tarrif</a>
+          <a href="#" class="w3-bar-item w3-button">Menu</a>
+          <a href="#" class="w3-bar-item w3-button">Sign up</a>
+          <a href="#" class="w3-bar-item w3-button">Log in</a>
+        </div>
+        
+        <!-- <div class="w3-main" style="margin-left:200px"> -->
       <!-- navigation bar -->
       <nav class="navbar navbar-expand-lg" id="navColor">
         <a class="navbar-brand bimg" href="#"
@@ -45,16 +57,8 @@
             Brothers</div class="mr-auto"
           >
         <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          aria-label="Toggle navigation" class=" navbar-toggler w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -346,5 +350,13 @@
       </div>
       <div class="copyright"> © Copyright 2017 Royalbison AutoRentals India Private Ltd. All rights reserved.</div>
     </div>
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
   </body>
 </html>
